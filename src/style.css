@@ -1,0 +1,395 @@
+/* Estilos globais */
+
+* {
+    box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Readex Pro", sans-serif;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1E8D9;
+}
+
+/* Estilo do header */
+
+.menu-site {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #38413E;
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-site ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu-site a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #E1E8D9;
+}
+
+.menu-site img {
+    width: 50px;
+}
+
+.banner-site {
+    width: 100%;
+    height: 80vh;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.master-banner {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/roda.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 1px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner-site {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.master-banner {
+    text-align: center;
+    position: relative;
+}
+
+
+.text-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-banner span {
+    font-weight: bold;
+    color: #E1E8D9;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+}
+
+.text-banner span:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+.text-banner span:nth-child(2) {
+    font-size: 3rem;
+}
+
+.text-banner span:nth-child(3) {
+    font-size: 1.5rem;
+}
+
+
+.logo-banner {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.logo-banner img {
+    width: 60px;
+    height: auto;
+}
+
+/* Estilos secessoes */
+
+.container-geral-light {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    width: 100%;
+}
+
+.container-geral-light .container-text-destaque {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bolder;
+    background: url(./img/backgroundpneu.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center;
+    margin-bottom: 24px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.container-geral-light .container-text-destaque span {
+    color: #38413E;
+    padding: 8px;
+    background-color: #E1E8D9;
+}
+
+.container-cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: stretch;
+    justify-items: center;
+}
+
+.card-veiculos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fbf5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 1px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+}
+
+.card-veiculos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-veiculos .card-infos {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.card-veiculos span {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-veiculos button {
+    width: 200px;
+    height: 46px;
+    padding: 10px 15px;
+    background-color: #ff4500;
+    color: #f8fbf5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: auto;
+    font-weight: bolder;
+}
+
+.card-veiculos button:hover {
+    background-color: #e43f00;
+}
+
+.nome-veiculo {
+    font-weight: bolder;
+    color: #38413E;
+    margin-bottom: 10px;
+}
+
+
+.about-container {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    width: 100%;
+    background-color: #38413E;
+}
+
+.about-container .about-text-destaque {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bolder;
+    background: url(./img/backgroundpneu2.png);
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 24px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.about-container .about-text-destaque span {
+    color: #E1E8D9;
+    padding: 8px;
+    background-color: #38413E;
+}
+
+.about-container .container-big {
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.about-container .container-text {
+    flex: 1;
+    color: #E1E8D9;
+}
+
+.about-container .container-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.about-container .container-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.img-logo-about {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.img-grande-about {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.container-formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-formulario form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+}
+
+.container-formulario form input,
+.container-formulario form textarea {
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 0.5px solid #38413E;
+    padding: 8px;
+    font-family: "Readex Pro", sans-serif;
+    height: 48px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #f8fbf5;
+}
+
+.container-formulario form button {
+    height: 48px;
+    padding: 8px;
+    font-size: 16px;
+    font-family: "Readex Pro", sans-serif;
+    background-color: #38413E;
+    border: none;
+    border-radius: 8px;
+    color: #f8fbf5;
+    width: 224px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 1px 5px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container-formulario form button:hover {
+    background-color: #242927;
+}
+
+.container-formulario form h2,
+.container-formulario form p {
+    color: #38413E;
+}
+
+.container-formulario form p {
+    text-align: justify;
+}
+
+footer {
+    background-color: #e1e8d9;
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.container-redes-sociais h2 {
+    color: #38413E;
+}
+
+.container-redes-sociais ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.container-redes-sociais ul li img {
+    height: 48px;
+}
+
+.container-redes-sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
