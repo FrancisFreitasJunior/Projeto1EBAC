@@ -130,5 +130,11 @@
         </div>
     </section>
     <footer>&copy; 2025 PionerMotors by Francis de Freitas Junior</footer>
+    <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+        }
+    </script>
 </body>
 </html>
